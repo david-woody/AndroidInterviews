@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('init') {
       steps {
-        sh '''chmod +x gradlew
-pwd'''
+        sh 'pwd'
       }
     }
   }
