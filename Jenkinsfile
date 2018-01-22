@@ -6,5 +6,10 @@ pipeline {
         sh 'chmod +x gradlew'
       }
     }
+    stage('clean') {
+      steps {
+        sh 'gralew clean'
+      }
+    }
   }
 }
